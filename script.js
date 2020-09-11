@@ -10,7 +10,10 @@ function writePassword() {
 
 }
 
+
+
 // TODO: Create the generatePassword function. Returns final password and all code should live inside this function.
+ 
 
 // TODO: Need prompt to ask length of password then save that to VAR
 
@@ -26,7 +29,10 @@ function writePassword() {
 // TODO: Select the specific number of characters chosen randomly by user according to how long password length selected was.
 
 // can use Math.floor(Math.random()) to get random numbers. use For loop that occurs the length of # of characters selected by user.
-// * for{var i=0} ; (i<"user prompt" ; i++){}
+// * for(var i=0 ; i<"user prompt" ; i++){}
+
+// TODO: inside forloop, push each character into final array
+// TODO: create array variable to hold final password.
 
 
 // TODO: Add validation to make sure at least 1 character is selected.
@@ -34,4 +40,20 @@ function writePassword() {
 // TODO: after all prompts done, 
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
+
+generateBtn.addEventListener("click", writePassword) 
+  
+var pLength = prompt("What length of password do you need?")
+
+  
+var lCase = confirm("Would you like to include lowercase letters?")
+var uCase = confirm("Would you like to include uppercase letters?")
+var passNum = confirm("Would you like to include numbers?")
+var specChar = confirm("Would you like to include special characters?")
+
+
+
+
+
+  
